@@ -1,0 +1,23 @@
+{
+  "name": "backend-ddd",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@types/pg": "^8.6.5",
+    "dotenv": "^16.0.0",
+    "pg": "^8.7.3",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  },
+  "scripts": {
+    "test": "node ./node_modules/@cucumber/cucumber/bin/cucumber-js features/**/*.feature --require features/steps/**/*.ts --require-module ts-node/register/transpile-only --format-options \"{\\\"snippetInterface\\\": \\\"async-await\\\"}\" --format summary --publish-quiet"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^8.1.2",
+    "@types/chai": "^4.3.1",
+    "@types/mocha": "^9.1.1",
+    "chai": "^4.3.6",
+    "mocha": "^9.2.2"
+  }
+}
